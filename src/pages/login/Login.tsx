@@ -8,10 +8,11 @@ function Login() {
     <>
       {
         isLogged ? (
-          <Home titulo='Está acabando' texto='vai dar bom! Eu acho...' />
+          <Home titulo='Parabéns!' texto='Agora você está logado! :)' />
         ) : (
           <div>
             <h2>Login</h2>
+            <p>Você ainda não está logado</p>
             <button onClick={() => setIsLogged(true)}>Logar</button>
           </div>
         )
